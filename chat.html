@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Chat</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #chart-container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        canvas {
+            margin: 20px 0;
+            min-height: 400px;
+            max-height: 600px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            color: #2196F3;
+            text-decoration: none;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        a:hover {
+            color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="chat-title">WhatsApp Chat</h1>
+    <div id="chart-container"></div>
+    <a href="index.html">Back to Contacts</a>
+    
+    <!-- Load scripts at the end -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <script type="module" src="dist/chat.js"></script>
+</body>
+</html> 

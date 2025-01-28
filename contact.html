@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Details</title>
+    <meta charset="UTF-8">
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            document.getElementById('message').textContent = `${name} is cool!`;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="message"></h1>
+    <a href="index.html">Back to Contacts</a>
+</body>
+</html> 
